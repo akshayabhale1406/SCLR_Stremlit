@@ -9,4 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import statsmodels.api as sm
 
-df = pd.readcsv
+df = pd.readcsv("cars24-car-price-cleaned.csv")
+
+df.head()
+

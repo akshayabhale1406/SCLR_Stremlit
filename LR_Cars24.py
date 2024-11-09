@@ -9,9 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import statsmodels.api as sm
 from sklearn.preprocessing import MinMaxScaler
-
 df = pd.readcsv("cars24-car-price-cleaned.csv")
-
 df.head()
 
 df["make"] = df.groupby(["make"])["selling_price"].transform("mean")

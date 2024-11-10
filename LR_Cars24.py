@@ -17,3 +17,11 @@ df["model'] = df.groupby(["model']["selling_price"].transform("mean")
 
 minMAXscaler = MinMaxScaler()
 
+df1=pd.DataFrame(min_max_scaler.fit_transform(df[['year', 'km_driven', 'mileage', 'engine', 'max_power',
+       'age', 'make', 'model', 'Individual', 'Trustmark Dealer', 'Diesel',
+       'Electric', 'LPG', 'Petrol', 'Manual', '5', '>5']]),columns=['year', 'km_driven', 'mileage', 'engine', 'max_power',
+       'age', 'make', 'model', 'Individual', 'Trustmark Dealer', 'Diesel',
+       'Electric', 'LPG', 'Petrol', 'Manual', '5', '>5'])
+df1["selling_price"]=df["selling_price"]
+
+df1

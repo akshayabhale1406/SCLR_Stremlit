@@ -24,6 +24,6 @@ df1=pd.DataFrame(min_max_scaler.fit_transform(df[['year', 'km_driven', 'mileage'
        'Electric', 'LPG', 'Petrol', 'Manual', '5', '>5'])
 df1["selling_price"]=df["selling_price"]
 
-print("hello!")
+print("hello!!")
 
 df1
